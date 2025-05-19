@@ -2,25 +2,112 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test EOF Hemsida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EOF KBA – El & Fastigheter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 2rem auto;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+    header {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1603127087403-7e6b6e8b1079?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    section p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .contact-card {
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 1rem;
+      border-radius: 8px;
+    }
+    .contact-card h3 {
+      margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      .contacts {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 2rem;
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>El- och fastigheter Kungsbacka</h1>
-  <p>Välkommen till vår hemsida!</p>
-  <p>Vi är ett företag i Kungsbacka som erbjuder elinstallationer- och service samt sådant som rör fastighetsfrågor.</p>
 
-  <h2>Kontakt</h2>
-  <p>📞 0502-123 456</p>
-  <p>📧 kontakt@blablabla.se</p>
-  <p>📍 Storgatan 5, Kungsbacka</p>
+<header>
+  <h1>El- och fastighetsservice Kungsbacka</h1>
+</header>
+
+<section>
+  <h2>Pålitlig elservice med personlig touch</h2>
+  <p>
+    Vi erbjuder certifierade elinstallationer i Göteborg och Kungsbacka – från nybyggen till felsökning och energioptimering. Oavsett om du är privatperson eller företag kan du räkna med snabb service, trygg expertis och hög kvalitet i varje led.
+  </p>
+</section>
+
+<footer>
+  <h2>Kontakta oss</h2>
+  <div class="contacts">
+    <div class="contact-card">
+      <h3>John Doe</h3>
+      <p>VD & Projektledare<br>john@eofkba.se</p>
+    </div>
+    <div class="contact-card">
+      <h3>Jane Doe</h3>
+      <p>Elinstallatör<br>jane@eofkba.se</p>
+    </div>
+    <div class="contact-card">
+      <h3>Jay Doe</h3>
+      <p>Fastighetstekniker<br>jay@eofkba.se</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
