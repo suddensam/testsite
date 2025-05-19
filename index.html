@@ -12,45 +12,51 @@
       background-color: #ffffff;
       color: #1a1a1a;
     }
-    header {
-      position: relative;
-      background-image: url('https://images.pexels.com/photos/4254160/pexels-photo-4254160.jpeg');
+
+    .hero {
+      width: 100%;
+      height: 250px;
+      background-image: url('https://images.unsplash.com/photo-1615592845693-9d3c1b9ed08d?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
-      height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      color: white;
     }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 700;
+
+    .hero h1 {
+      color: white;
       background-color: rgba(0, 0, 0, 0.6);
       padding: 1rem 2rem;
-      border-radius: 8px;
+      font-size: 2rem;
+      font-weight: 700;
+      border-radius: 6px;
     }
+
     section {
       padding: 3rem 1.5rem;
       max-width: 800px;
       margin: 0 auto;
     }
+
     section h2 {
       font-size: 1.8rem;
       font-weight: 600;
       margin-bottom: 1rem;
     }
+
     section p {
       line-height: 1.6;
       font-size: 1.1rem;
     }
+
     footer {
       background-color: #003366;
       color: white;
       padding: 2rem 1.5rem;
       text-align: center;
     }
+
     .contacts {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -58,11 +64,13 @@
       max-width: 800px;
       margin: 0 auto;
     }
+
     .contact-card {
       background-color: rgba(255, 255, 255, 0.1);
       padding: 1rem;
       border-radius: 8px;
     }
+
     .contact-card h3 {
       margin-top: 0;
     }
@@ -71,18 +79,19 @@
       .contacts {
         grid-template-columns: 1fr;
       }
-      header h1 {
-        font-size: 2rem;
-        padding: 1rem;
+
+      .hero h1 {
+        font-size: 1.5rem;
+        padding: 0.8rem 1rem;
       }
     }
   </style>
 </head>
 <body>
 
-<header>
+<div class="hero">
   <h1>El- och fastighetsservice Kungsbacka</h1>
-</header>
+</div>
 
 <section>
   <h2>Pålitlig elservice med personlig touch</h2>
